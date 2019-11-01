@@ -109,5 +109,10 @@ namespace Cash_Register_Summative
 
 
         }
+
+        private void CalculateChangeButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

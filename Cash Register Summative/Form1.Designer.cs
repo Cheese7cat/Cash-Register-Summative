@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PokeMart));
             this.calculateTotalsButton = new System.Windows.Forms.Button();
             this.pokeballLabel = new System.Windows.Forms.Label();
             this.greatballLabel = new System.Windows.Forms.Label();
@@ -41,23 +42,20 @@
             this.taxOutput = new System.Windows.Forms.Label();
             this.totalLabel = new System.Windows.Forms.Label();
             this.totalOutput = new System.Windows.Forms.Label();
-            this.givenLabel = new System.Windows.Forms.Label();
-            this.givenTextBox = new System.Windows.Forms.TextBox();
-            this.calculateChangeButton = new System.Windows.Forms.Button();
             this.printReceiptButton = new System.Windows.Forms.Button();
-            this.changeLabel = new System.Windows.Forms.Label();
-            this.changeOutput = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // calculateTotalsButton
             // 
+            this.calculateTotalsButton.BackColor = System.Drawing.Color.DarkRed;
             this.calculateTotalsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.calculateTotalsButton.ForeColor = System.Drawing.Color.White;
             this.calculateTotalsButton.Location = new System.Drawing.Point(69, 129);
             this.calculateTotalsButton.Name = "calculateTotalsButton";
             this.calculateTotalsButton.Size = new System.Drawing.Size(169, 23);
             this.calculateTotalsButton.TabIndex = 0;
             this.calculateTotalsButton.Text = "Calculate Totals";
-            this.calculateTotalsButton.UseVisualStyleBackColor = true;
+            this.calculateTotalsButton.UseVisualStyleBackColor = false;
             this.calculateTotalsButton.Click += new System.EventHandler(this.CalculateTotalsButton_Click);
             // 
             // pokeballLabel
@@ -126,7 +124,7 @@
             // subOutput
             // 
             this.subOutput.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.subOutput.Location = new System.Drawing.Point(149, 166);
+            this.subOutput.Location = new System.Drawing.Point(135, 166);
             this.subOutput.Name = "subOutput";
             this.subOutput.Size = new System.Drawing.Size(100, 13);
             this.subOutput.TabIndex = 9;
@@ -134,7 +132,7 @@
             // taxOutput
             // 
             this.taxOutput.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.taxOutput.Location = new System.Drawing.Point(149, 193);
+            this.taxOutput.Location = new System.Drawing.Point(135, 193);
             this.taxOutput.Name = "taxOutput";
             this.taxOutput.Size = new System.Drawing.Size(100, 13);
             this.taxOutput.TabIndex = 10;
@@ -151,75 +149,31 @@
             // totalOutput
             // 
             this.totalOutput.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.totalOutput.Location = new System.Drawing.Point(149, 216);
+            this.totalOutput.Location = new System.Drawing.Point(135, 216);
             this.totalOutput.Name = "totalOutput";
             this.totalOutput.Size = new System.Drawing.Size(100, 13);
             this.totalOutput.TabIndex = 12;
             // 
-            // givenLabel
-            // 
-            this.givenLabel.Location = new System.Drawing.Point(41, 273);
-            this.givenLabel.Name = "givenLabel";
-            this.givenLabel.Size = new System.Drawing.Size(52, 23);
-            this.givenLabel.TabIndex = 13;
-            this.givenLabel.Text = "Given";
-            // 
-            // givenTextBox
-            // 
-            this.givenTextBox.Location = new System.Drawing.Point(99, 270);
-            this.givenTextBox.Name = "givenTextBox";
-            this.givenTextBox.Size = new System.Drawing.Size(100, 20);
-            this.givenTextBox.TabIndex = 14;
-            // 
-            // calculateChangeButton
-            // 
-            this.calculateChangeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.calculateChangeButton.Location = new System.Drawing.Point(69, 299);
-            this.calculateChangeButton.Name = "calculateChangeButton";
-            this.calculateChangeButton.Size = new System.Drawing.Size(169, 23);
-            this.calculateChangeButton.TabIndex = 15;
-            this.calculateChangeButton.Text = "Calculate Change";
-            this.calculateChangeButton.UseVisualStyleBackColor = true;
-            // 
             // printReceiptButton
             // 
+            this.printReceiptButton.BackColor = System.Drawing.Color.DarkRed;
             this.printReceiptButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printReceiptButton.Location = new System.Drawing.Point(69, 384);
+            this.printReceiptButton.ForeColor = System.Drawing.Color.White;
+            this.printReceiptButton.Location = new System.Drawing.Point(69, 260);
             this.printReceiptButton.Name = "printReceiptButton";
             this.printReceiptButton.Size = new System.Drawing.Size(180, 23);
             this.printReceiptButton.TabIndex = 16;
             this.printReceiptButton.Text = "Print Receipt";
-            this.printReceiptButton.UseVisualStyleBackColor = true;
+            this.printReceiptButton.UseVisualStyleBackColor = false;
             this.printReceiptButton.Click += new System.EventHandler(this.PrintReceiptButton_Click);
-            // 
-            // changeLabel
-            // 
-            this.changeLabel.Location = new System.Drawing.Point(41, 343);
-            this.changeLabel.Name = "changeLabel";
-            this.changeLabel.Size = new System.Drawing.Size(64, 23);
-            this.changeLabel.TabIndex = 17;
-            this.changeLabel.Text = "Change";
-            // 
-            // changeOutput
-            // 
-            this.changeOutput.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.changeOutput.Location = new System.Drawing.Point(118, 343);
-            this.changeOutput.Name = "changeOutput";
-            this.changeOutput.Size = new System.Drawing.Size(45, 23);
-            this.changeOutput.TabIndex = 18;
             // 
             // PokeMart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.changeOutput);
-            this.Controls.Add(this.changeLabel);
+            this.ClientSize = new System.Drawing.Size(571, 450);
             this.Controls.Add(this.printReceiptButton);
-            this.Controls.Add(this.calculateChangeButton);
-            this.Controls.Add(this.givenTextBox);
-            this.Controls.Add(this.givenLabel);
             this.Controls.Add(this.totalOutput);
             this.Controls.Add(this.totalLabel);
             this.Controls.Add(this.taxOutput);
@@ -233,6 +187,7 @@
             this.Controls.Add(this.greatballLabel);
             this.Controls.Add(this.pokeballLabel);
             this.Controls.Add(this.calculateTotalsButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PokeMart";
             this.Text = "PokeMart";
             this.Shown += new System.EventHandler(this.Form1_Shown);
@@ -256,12 +211,7 @@
         private System.Windows.Forms.Label taxOutput;
         private System.Windows.Forms.Label totalLabel;
         private System.Windows.Forms.Label totalOutput;
-        private System.Windows.Forms.Label givenLabel;
-        private System.Windows.Forms.TextBox givenTextBox;
-        private System.Windows.Forms.Button calculateChangeButton;
         private System.Windows.Forms.Button printReceiptButton;
-        private System.Windows.Forms.Label changeLabel;
-        private System.Windows.Forms.Label changeOutput;
     }
 }
 
